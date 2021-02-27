@@ -1,0 +1,39 @@
+{
+  "name": "atomic_alloy",
+  "version": "1.0.0",
+  "description": "Bot for discord",
+  "main": "main.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximosdrr/atomic-alloy.git"
+  },
+  "keywords": [
+    "atomic",
+    "alloy",
+    "discord",
+    "bot",
+    "music",
+    "bot"
+  ],
+  "author": "Hiran Júnior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximosdrr/atomic-alloy/issues"
+  },
+  "homepage": "https://github.com/maximosdrr/atomic-alloy#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
